@@ -106,9 +106,40 @@ body{
   width: calc(100% - 200px);
   height: 100%;
   float: left;
-  background: pink;
+  background: black;
   overflow-y: auto;
 }
+
+.categories {
+  padding: 100px 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.categories a {
+  position: relative;
+  margin: 0 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+.categories a span.isActive {
+  display: none;
+  position: absolute;
+  bottom: -10px;
+  left: 10%;
+  height: 5px;
+  width: 80%;
+  background: green;
+}
+
+.categories a:hover span {
+  display: block;
+}
+
+
+
 
 .footer{
   width: 100%;
